@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/nav_home"
+        android:title="All Categories"
+        android:icon="@drawable/v_6"
+        />
+
+    <item
+        android:id="@+id/nav_bike"
+        android:title="My Order"
+        android:icon="@drawable/v_7"/>
+
+    <item
+        android:id="@+id/nav_sc"
+        android:title="My Cart"
+        android:icon="@drawable/v_7"/>
+
+    <item
+        android:id="@+id/nav_bk"
+        android:title="My Wishlist"
+        android:icon="@drawable/v_8"/>
+
+    <item
+        android:id="@+id/nav_sbk"
+        android:title="My Account"
+        android:icon="@drawable/v_9"/>
+
+    <item
+        android:id="@+id/nav_p"
+        android:title="My Notification"
+        android:icon="@drawable/v_10"/>
+
+    <item
+
+        android:id="@+id/nav_b"
+        android:title="My chats"
+        android:icon="@drawable/v_11"/>
+
+
+    <group android:id="@+id/grp2">
+        <item
+            android:id="@+id/nav_About"
+            android:title="Help Centre"
+            />
+        <item
+            android:id="@+id/nav_log_out"
+            android:title="Privacy Policy"/>
+        <item
+            android:id="@+id/nav_f"
+            android:title="Legal" />
+    </group>
+
+
+
+
+
+
+</menu>
