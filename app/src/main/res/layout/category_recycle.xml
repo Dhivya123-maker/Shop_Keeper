@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/deal_bg"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/deal_bg"
+            android:backgroundTint="@color/white"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:elevation="5dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/deal_img"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:src="@drawable/kurti">
+
+            </ImageView>
+            <TextView
+                android:id="@+id/p_name_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kurtis"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                />
+
+        </LinearLayout>
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/deal_bg"-->
+<!--            android:backgroundTint="@color/white"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:padding="5dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:elevation="5dp"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="90dp"-->
+<!--                android:layout_height="90dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:src="@drawable/kurti">-->
+
+<!--            </ImageView>-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Kurtis"-->
+<!--                android:gravity="center"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:textColor="@color/black"-->
+
+<!--                android:textSize="14dp"-->
+<!--                />-->
+
+<!--        </LinearLayout>-->
+
+
+
+    </LinearLayout>
+</RelativeLayout>

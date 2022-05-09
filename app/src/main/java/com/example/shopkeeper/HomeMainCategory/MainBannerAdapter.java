@@ -14,26 +14,72 @@ import com.example.shopkeeper.R;
 
 import java.util.List;
 
+//public  class MainBannerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>{
+//
+//    private Context c;
+//
+//    public MainBannerAdapter(Context c, List<ItemModel> list) {
+//        this.c = c;
+//        this.list = list;
+//    }
+//
+//    List<ItemModel> list;
+//    @NonNull
+//    @Override
+//    public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+//
+//        return  new ViewHolder(LayoutInflater.from(c).inflate(R.layout.home_main_banner,parent,false));
+//    }
+//
+//    @Override
+//    public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
+//
+//        ((ViewHolder)holder).bindData(list.get(position));
+//
+//    }
+//
+//    @Override
+//    public int getItemCount() {
+//        return list.size();
+//    }
+//
+//    class ViewHolder extends  RecyclerView.ViewHolder{
+//
+//        private ImageView imageView;
+//        public ViewHolder(@NonNull View itemView) {
+//            super(itemView);
+//
+//            imageView = itemView.findViewById(R.id.image);
+//
+//        }
+//        void bindData(ItemModel m){
+//
+//            imageView.setImageResource(m.getImageRes());
+//        }
+//    }
+//
+//}
 public class MainBannerAdapter extends RecyclerView.Adapter<MainBannerAdapter.MyViewHolder> {
 
     private Context context;
-    private List<MainBannerModel> modelList;
+//    private List<MainBannerModel> modelList;
+private List<MainBannerModel> modelList;
 
-    public static MainBannerAdapter.OnItemClickListener2 mListener2;
-
-
-    String v_type = null;
-
-
-    public interface OnItemClickListener2{
-        void onItemClick2(int position);
-    }
-
-    public void setOnItemClickListener2(MainBannerAdapter.OnItemClickListener2 listener2){
-
-        mListener2 = listener2;
-
-    }
+//    public static MainBannerAdapter.OnItemClickListener2 mListener2;
+//
+//
+//    String v_type = null;
+//
+//
+//    public interface OnItemClickListener2{
+//        void onItemClick2(int position);
+//    }
+//
+//    public void setOnItemClickListener2(MainBannerAdapter.OnItemClickListener2 listener2){
+//
+//        mListener2 = listener2;
+//
+//    }
 
 
     public MainBannerAdapter(Context context, List<MainBannerModel> modelList) {
@@ -92,7 +138,7 @@ public class MainBannerAdapter extends RecyclerView.Adapter<MainBannerAdapter.My
 
 
             image = itemView.findViewById(R.id.image);
-            card = itemView.findViewById(R.id.card);
+//            card = itemView.findViewById(R.id.card);
 
 
             itemView.setOnClickListener(new View.OnClickListener() {
@@ -100,13 +146,12 @@ public class MainBannerAdapter extends RecyclerView.Adapter<MainBannerAdapter.My
                 public void onClick(View view) {
 
 
-
-                    if (mListener2 != null) {
-                        int position = getAdapterPosition();
-                        if (position != RecyclerView.NO_POSITION) {
-                            mListener2.onItemClick2(position);
-                        }
-                    }
+//                    if (mListener2 != null) {
+//                        int position = getAdapterPosition();
+//                        if (position != RecyclerView.NO_POSITION) {
+//                            mListener2.onItemClick2(position);
+//                        }
+//                    }
 
                 }
             });

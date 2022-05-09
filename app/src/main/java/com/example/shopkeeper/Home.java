@@ -10,7 +10,8 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.google.android.material.appbar.AppBarLayout;
+import com.example.shopkeeper.Cart.FragmentCart;
+import com.example.shopkeeper.Categories.FragmentCategory;
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;

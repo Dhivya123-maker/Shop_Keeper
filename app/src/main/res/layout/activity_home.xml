@@ -31,7 +31,6 @@
 
 
 
-        >
         <RelativeLayout
             android:id="@+id/div1"
             android:layout_width="match_parent"
@@ -74,16 +73,14 @@
         </RelativeLayout>
 
 
-
-    <fragment
-        android:id="@+id/fragment_activity_home"
-        android:name="androidx.navigation.fragment.NavHostFragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_anchorGravity="center"
-        android:layout_above="@+id/nav_view"
-        android:layout_below="@+id/div1"
-        />
+        <fragment
+            android:id="@+id/fragment_activity_home"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/nav_view"
+            android:layout_below="@+id/div1"
+            app:layout_anchorGravity="center" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/nav_view"

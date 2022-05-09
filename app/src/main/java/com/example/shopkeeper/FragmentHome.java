@@ -1,24 +1,48 @@
 package com.example.shopkeeper;
 
+import android.annotation.SuppressLint;
+import android.graphics.Color;
+import android.media.audiofx.DynamicsProcessing;
+import android.os.Build;
 import android.os.Bundle;
+
 
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.PagerSnapHelper;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.viewpager.widget.ViewPager;
 
+import android.text.Html;
+import android.util.TypedValue;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
+import com.example.shopkeeper.Deal.Deal_Adapter;
+import com.example.shopkeeper.Deal.Deal_Model;
 import com.example.shopkeeper.HomeMainCategory.MainBannerAdapter;
 import com.example.shopkeeper.HomeMainCategory.MainBannerModel;
 import com.example.shopkeeper.HomeMainCategory.MainCategoryAdapter;
 import com.example.shopkeeper.HomeMainCategory.MainCategoryModel;
+import com.example.shopkeeper.Top_sell.Top_sell_Adapter;
+import com.example.shopkeeper.Top_sell.Top_sell_Model;
+import com.example.shopkeeper.Top_sell.Top_sell_one_Adapter;
+import com.example.shopkeeper.Top_sell.Top_sell_one_Model;
+import com.example.shopkeeper.trending.Trending_Adapter;
+import com.example.shopkeeper.trending.Trending_model;
+import com.smarteist.autoimageslider.SliderView;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class FragmentHome extends Fragment implements MainCategoryAdapter.OnItemClickListener,MainBannerAdapter.OnItemClickListener2{
+import me.relex.circleindicator.CircleIndicator;
+
+public class FragmentHome extends Fragment implements MainCategoryAdapter.OnItemClickListener {
 
 
     List<MainCategoryModel> main_category_modelList;
@@ -27,8 +51,22 @@ public class FragmentHome extends Fragment implements MainCategoryAdapter.OnItem
     List<MainBannerModel> mainBannerModelList;
     MainBannerAdapter mainBannerAdapter;
 
+    List<Deal_Model> deal_modelList;
+     Deal_Adapter deal_adapter;
+
+    List<Top_sell_Model> top_sell_modelList;
+    Top_sell_Adapter top_sell_adapter;
+
+    List<Top_sell_one_Model> top_sell_one_modelList;
+    Top_sell_one_Adapter top_sell_one_adapter;
+
+    List<Trending_model> trendingModelList;
+    Trending_Adapter trending_adapter;
+
     RecyclerView main_category_recycle;
     RecyclerView recycle_two;
+    RecyclerView deal,top_sell_one,top_sell_two,trending;
+
 
 
 
@@ -38,17 +76,22 @@ public class FragmentHome extends Fragment implements MainCategoryAdapter.OnItem
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
+
         main_category_recycle = view.findViewById(R.id.main_category_recycle);
         recycle_two = view.findViewById(R.id.recycle_two);
-
-
+        deal = view.findViewById(R.id.deal_of_the_day_recycle);
+        top_sell_one = view.findViewById(R.id.top_selling_products_recycle_one);
+        top_sell_two = view.findViewById(R.id.top_selling_products_recycle_two);
+        trending = view.findViewById(R.id.trending_offers_recycle);
 
         data();
+
 
 
         return view;
     }
 
+    @SuppressLint("ResourceAsColor")
     private void data() {
         main_category_modelList = new ArrayList<>();
         MainCategoryModel model = new MainCategoryModel();
@@ -128,10 +171,81 @@ public class FragmentHome extends Fragment implements MainCategoryAdapter.OnItem
         mainBannerModelList.add(model9);
         mainBannerModelList.add(model10);
 
-        mainBannerAdapter = new MainBannerAdapter(getActivity(),mainBannerModelList);
+
+
+
+
+//        mainBannerAdapter = new MainBannerAdapter(getActivity(),mainBannerModelList);
+//        recycle_two.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false));
+//        recycle_two.setAdapter(mainBannerAdapter);
+//        mainBannerAdapter.setOnItemClickListener2(FragmentHome.this);
+
+        recycle_two.getLayoutParams().height = ViewGroup.LayoutParams.WRAP_CONTENT;
+
+        SimpleViewAdapter adapter = new SimpleViewAdapter(5, R.layout.home_main_banner);
+
+        recycle_two.setAdapter(adapter);
         recycle_two.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false));
-        recycle_two.setAdapter(mainBannerAdapter);
-        mainBannerAdapter.setOnItemClickListener2(FragmentHome.this);
+
+        // add pager behavior
+        PagerSnapHelper snapHelper = new PagerSnapHelper();
+        snapHelper.attachToRecyclerView(recycle_two);
+
+        // pager indicator
+        recycle_two.addItemDecoration(new LinePagerIndicatorDecoration());
+
+
+        deal_modelList = new ArrayList<>();
+        Deal_Model deal_model = new Deal_Model();
+        deal_model.setName("Scotch Premium");
+        deal_model.setPrice("Rs.399/-");
+        deal_model.setOffer("(75% off)");
+
+        deal_modelList.add(deal_model);
+
+        deal_adapter = new Deal_Adapter(getActivity(),deal_modelList);
+        deal.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false));
+        deal.setAdapter(deal_adapter);
+
+
+        top_sell_modelList = new ArrayList<>();
+        Top_sell_Model top_sell_model = new Top_sell_Model();
+        top_sell_model.setProduct_name("Women dress");
+
+
+        top_sell_modelList.add(top_sell_model);
+
+        top_sell_adapter = new Top_sell_Adapter(getActivity(),top_sell_modelList);
+        top_sell_one.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false));
+        top_sell_one.setAdapter(top_sell_adapter);
+
+
+        top_sell_one_modelList = new ArrayList<>();
+        Top_sell_one_Model top_sell_one_model = new Top_sell_one_Model();
+        top_sell_one_model.setProduct_name("Style for women");
+        top_sell_one_model.setOffer("60% off");
+
+
+        top_sell_one_modelList.add(top_sell_one_model);
+
+        top_sell_one_adapter = new Top_sell_one_Adapter(getActivity(),top_sell_one_modelList);
+        top_sell_two.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false));
+        top_sell_two.setAdapter(top_sell_one_adapter);
+
+
+        trendingModelList = new ArrayList<>();
+        Trending_model trending_model = new Trending_model();
+        trending_model.setP_name("Men Shirt's");
+        trending_model.setOffer("Min 20% off");
+
+
+        trendingModelList.add(trending_model);
+
+        trending_adapter = new Trending_Adapter(getActivity(),trendingModelList);
+        trending.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false));
+        trending.setAdapter(trending_adapter);
+
+
 
 
     }
@@ -141,10 +255,8 @@ public class FragmentHome extends Fragment implements MainCategoryAdapter.OnItem
 
     }
 
-    @Override
-    public void onItemClick2(int position) {
 
-    }
+
 }
 
 
