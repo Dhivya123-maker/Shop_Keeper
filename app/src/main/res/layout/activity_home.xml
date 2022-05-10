@@ -19,7 +19,7 @@
         app:itemIconTint="@color/white"
         app:itemIconPadding="10dp"
         app:itemIconSize="17dp"
-        android:paddingStart="20dp"
+        android:paddingStart="15dp"
         android:listDivider="@color/white"
         />
 
@@ -40,15 +40,25 @@
             android:background="@color/white"
             >
 
-            <com.google.android.material.appbar.MaterialToolbar
+<!--            <com.google.android.material.appbar.MaterialToolbar-->
+<!--                android:id="@+id/topAppBar"-->
+<!--                android:layout_width="25dp"-->
+<!--                android:layout_height="25dp"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_marginStart="20dp"-->
+<!--                app:navigationIcon="@drawable/menu">-->
+
+<!--            </com.google.android.material.appbar.MaterialToolbar>-->
+
+            <ImageView
                 android:id="@+id/topAppBar"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_centerVertical="true"
                 android:layout_marginStart="20dp"
-                app:navigationIcon="@drawable/v_12">
+                android:src="@drawable/menu">
 
-            </com.google.android.material.appbar.MaterialToolbar>
+            </ImageView>
 
 
             <ImageView

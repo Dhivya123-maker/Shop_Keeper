@@ -4,12 +4,18 @@
 
     <application
         android:allowBackup="true"
+        android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:hardwareAccelerated="true"
         android:theme="@style/Theme.ShopKeeper">
+        <activity
+            android:name=".Category_Control"
+            android:exported="false" />
+        <activity
+            android:name=".Order_Statusz.Order"
+            android:exported="false" />
         <activity
             android:name=".Home"
             android:exported="true" />

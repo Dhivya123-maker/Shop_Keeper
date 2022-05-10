@@ -1,6 +1,7 @@
 package com.example.shopkeeper;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.graphics.Color;
 import android.media.audiofx.DynamicsProcessing;
 import android.os.Build;
@@ -23,12 +24,14 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.example.shopkeeper.Cart.see_Later_Fragment;
 import com.example.shopkeeper.Deal.Deal_Adapter;
 import com.example.shopkeeper.Deal.Deal_Model;
 import com.example.shopkeeper.HomeMainCategory.MainBannerAdapter;
 import com.example.shopkeeper.HomeMainCategory.MainBannerModel;
 import com.example.shopkeeper.HomeMainCategory.MainCategoryAdapter;
 import com.example.shopkeeper.HomeMainCategory.MainCategoryModel;
+import com.example.shopkeeper.Top_categories.Top_fragment;
 import com.example.shopkeeper.Top_sell.Top_sell_Adapter;
 import com.example.shopkeeper.Top_sell.Top_sell_Model;
 import com.example.shopkeeper.Top_sell.Top_sell_one_Adapter;
@@ -40,7 +43,7 @@ import com.smarteist.autoimageslider.SliderView;
 import java.util.ArrayList;
 import java.util.List;
 
-import me.relex.circleindicator.CircleIndicator;
+
 
 public class FragmentHome extends Fragment implements MainCategoryAdapter.OnItemClickListener {
 
@@ -252,6 +255,11 @@ public class FragmentHome extends Fragment implements MainCategoryAdapter.OnItem
 
     @Override
     public void onItemClick(int position) {
+//        getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_activity_home, new Top_fragment()).commit();
+
+        Intent intent = new Intent(getActivity(),Category_Control.class);
+        startActivity(intent);
+
 
     }
 

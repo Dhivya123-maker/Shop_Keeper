@@ -43,7 +43,7 @@ public class Filter_adapter extends RecyclerView.Adapter<Filter_adapter.ViewHold
     public void onBindViewHolder(@NonNull ViewHolder holder, @SuppressLint("RecyclerView") int position) {
 
         if(selectedPosition==position)
-            holder.itemView.setBackgroundColor(Color.parseColor("#27AE60"));
+            holder.itemView.setBackgroundColor(Color.parseColor("#028741"));
         else
             holder.itemView.setBackgroundColor(Color.parseColor("#ffffff"));
 
