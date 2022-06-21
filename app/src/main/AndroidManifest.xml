@@ -9,30 +9,88 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.ShopKeeper">
+        android:theme="@style/Theme.ShopKeeper"
+        android:windowSoftInputMode="adjustResize">
         <activity
-            android:name=".Category_Control"
+            android:name=".Home.MyCart.ChangeAddressClass"
             android:exported="false" />
         <activity
-            android:name=".Order_Statusz.Order"
+            android:name=".Home.MyCart.SeeLaterClass"
             android:exported="false" />
         <activity
-            android:name=".Home"
+            android:name=".Home.MyCart.MyCartClass"
+            android:exported="false" />
+        <activity
+            android:name=".Home.MyAccount.AccountAddAddress"
+            android:exported="false" />
+        <activity
+            android:name=".Home.MyAccount.AccountEditProfile"
+            android:exported="false" />
+        <activity
+            android:name=".Home.MyAccount.MyAccountClass"
+            android:exported="false" />
+        <activity
+            android:name=".CategoryControlclass.ProductCategories.MoreDetailsClass"
+            android:exported="false" />
+        <activity
+            android:name=".OrderStatus.Returned.ReturnDetails"
+            android:exported="false" />
+        <activity
+            android:name=".OrderStatus.Cancelled.CancelDetails"
+            android:exported="false" />
+        <activity
+            android:name=".OrderStatus.Delivered.DeliveryDetails"
+            android:exported="false" />
+        <activity
+            android:name=".Notification.Notification"
+            android:exported="false" />
+        <activity
+            android:name=".Home.Wishlist.Wishlist"
+            android:exported="false" />
+        <activity
+            android:name=".Home.MyReview.MyReviewClass"
+            android:exported="false" />
+        <activity
+            android:name=".CategoryControlclass.CategoryClass"
+            android:exported="false" />
+        <activity
+            android:name=".Profile.ProfileClass"
+            android:exported="false" />
+        <activity
+            android:name=".CountryPicker.CountrySelectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CategoryControlclass.ProductCatalog.ProductCatalogClass"
+            android:exported="false" />
+        <activity
+            android:name=".CategoryControlclass.ProductDetails.ProductOrderProcess.ProductOrderProcessClass"
+            android:exported="false" />
+        <activity
+            android:name=".CategoryControlclass.ProductDetails.ProductDetailsClass"
+            android:exported="false" />
+        <activity
+            android:name=".OrderStatus.Order"
+            android:exported="false" />
+        <activity
+            android:name=".Home.HomeClass"
+            android:exported="false" />
+        <activity
+            android:name=".OrderStatus.Orders.OrderDetails"
+            android:exported="false" />
+        <activity
+            android:name=".LoginControl.OTP"
             android:exported="true" />
         <activity
-            android:name=".OTP"
+            android:name=".LoginControl.ForgotPassword"
             android:exported="true" />
         <activity
-            android:name=".ForgotPassword"
+            android:name=".LoginControl.Register"
             android:exported="true" />
         <activity
-            android:name=".Register"
+            android:name=".LoginControl.NewPassword"
             android:exported="true" />
         <activity
-            android:name=".NewPassword"
-            android:exported="true" />
-        <activity
-            android:name=".Login"
+            android:name=".LoginControl.Login"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

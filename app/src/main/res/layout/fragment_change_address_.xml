@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Cart.FragmentCart">
-
+    tools:context=".Cart.FragmentCart"
+    android:background="#F6F9FA ">
 
 
 
@@ -12,29 +12,29 @@
         android:id="@+id/cat_lnr"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="15dp"
+        android:background="@color/white"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingStart="15dp"
         android:orientation="horizontal">
         <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:src="@drawable/ic_baseline_arrow_back_ios_24"
+            android:src="@drawable/back"
             />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
             android:layout_gravity="center"
             android:gravity="center"
-            android:textSize="18dp"
+            android:textSize="17dp"
+            android:fontFamily="@font/poppins_medium"
             android:layout_marginStart="15dp"
             android:text="Edit Address">
 
         </TextView>
     </LinearLayout>
-
-
 
 
 
@@ -49,7 +49,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         android:background="#F6F9FA ">
 
         <LinearLayout
@@ -64,60 +64,114 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Name"
+                android:layout_marginStart="2dp"
                 android:textColor="@color/black"
-                android:textSize="14dp" />
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="12dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp">
+
 
             <EditText
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginTop="5dp"
+                android:layout_height="35dp"
+                android:layout_margin="1dp"
+                android:elevation="1dp"
+                android:paddingStart="10dp"
+                android:textSize="12dp"
+                android:fontFamily="@font/poppins_regular"
                 android:background="@drawable/deal_bg"
                 android:backgroundTint="@color/white" />
-
+            </LinearLayout>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:text="Mobile no"
+                android:layout_marginStart="2dp"
                 android:textColor="@color/black"
-                android:textSize="14dp" />
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="12dp"  />
 
-            <EditText
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/deal_bg"
-                android:backgroundTint="@color/white" />
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp">
 
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="1dp"
+                    android:elevation="1dp"
+                    android:paddingStart="10dp"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:background="@drawable/deal_bg"
+                    android:backgroundTint="@color/white" />
+            </LinearLayout>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:text="Address line 1"
+                android:layout_marginStart="2dp"
                 android:textColor="@color/black"
-                android:textSize="14dp" />
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="12dp"  />
 
-            <EditText
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/deal_bg"
-                android:backgroundTint="@color/white" />
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp">
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="1dp"
+                    android:elevation="1dp"
+                    android:paddingStart="10dp"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:background="@drawable/deal_bg"
+                    android:backgroundTint="@color/white" />
+            </LinearLayout>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+                android:layout_marginStart="2dp"
                 android:text="Address line 2"
                 android:textColor="@color/black"
-                android:textSize="14dp" />
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="12dp" />
 
-            <EditText
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/deal_bg"
-                android:backgroundTint="@color/white" />
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp">
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="1dp"
+                    android:elevation="1dp"
+                    android:paddingStart="10dp"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:background="@drawable/deal_bg"
+                    android:backgroundTint="@color/white" />
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -129,7 +183,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="10dp"
+                    android:layout_marginEnd="20dp"
                     android:layout_weight="1"
                     android:orientation="vertical">
 
@@ -138,26 +192,37 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:text="City"
+                        android:layout_marginStart="2dp"
                         android:textColor="@color/black"
-                        android:textSize="14dp">
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="12dp" >
 
                     </TextView>
-
-                    <EditText
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="40dp"
-                        android:layout_marginTop="5dp"
-                        android:background="@drawable/deal_bg"
-                        android:backgroundTint="@color/white"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="5dp">
 
-                        />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_margin="1dp"
+                            android:elevation="1dp"
+                            android:paddingStart="10dp"
+                            android:textSize="12dp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:background="@drawable/deal_bg"
+                            android:backgroundTint="@color/white" />
+                    </LinearLayout>
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
+                    android:layout_marginStart="20dp"
                     android:layout_weight="1"
                     android:orientation="vertical">
 
@@ -166,18 +231,31 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:text="Pincode"
+                        android:layout_marginStart="2dp"
                         android:textColor="@color/black"
-                        android:textSize="14dp">
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="12dp" >
 
                     </TextView>
 
-                    <EditText
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="40dp"
-                        android:layout_marginTop="5dp"
-                        android:background="@drawable/deal_bg"
-                        android:backgroundTint="@color/white" />
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="5dp">
 
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_margin="1dp"
+                            android:elevation="1dp"
+                            android:paddingStart="10dp"
+                            android:textSize="12dp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:background="@drawable/deal_bg"
+                            android:backgroundTint="@color/white" />
+                    </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
 
@@ -187,38 +265,66 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:text="State"
+                android:layout_marginStart="2dp"
                 android:textColor="@color/black"
-                android:textSize="14dp" />
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="12dp"  />
 
-            <EditText
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/deal_bg"
-                android:backgroundTint="@color/white" />
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp">
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="1dp"
+                    android:elevation="1dp"
+                    android:paddingStart="10dp"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:background="@drawable/deal_bg"
+                    android:backgroundTint="@color/white" />
+            </LinearLayout>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:text="Landmark"
+                android:layout_marginStart="2dp"
                 android:textColor="@color/black"
-                android:textSize="14dp" />
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="12dp" />
 
-            <EditText
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/deal_bg"
-                android:backgroundTint="@color/white" />
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp">
 
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="1dp"
+                    android:elevation="1dp"
+                    android:paddingStart="10dp"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:background="@drawable/deal_bg"
+                    android:backgroundTint="@color/white" />
+            </LinearLayout>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:text="Address Type"
                 android:textColor="@color/black"
-                android:textSize="14dp" />
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="12dp"  />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -241,7 +347,8 @@
                         android:buttonTint="@color/green"
                         android:text="Home"
                         android:textColor="@color/black"
-                        android:textSize="14dp">
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="12dp" >
 
                     </RadioButton>
 
@@ -254,7 +361,8 @@
                         android:buttonTint="@color/green"
                         android:text="Work(10AM to 5PM)"
                         android:textColor="@color/black"
-                        android:textSize="14dp">
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="12dp" >
 
 
                     </RadioButton>
@@ -273,7 +381,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:layout_height="35dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginEnd="20dp"
                     android:layout_marginBottom="50dp"
@@ -286,11 +394,12 @@
 
                     <Button
                         android:layout_width="match_parent"
-                        android:layout_height="40dp"
+                        android:layout_height="35dp"
                         android:layout_gravity="center"
                         android:background="@drawable/border"
                         android:gravity="center"
                         android:text="Cancel"
+                        android:fontFamily="@font/poppins_medium"
                         android:textAllCaps="false">
 
                     </Button>
@@ -299,7 +408,7 @@
 
                 <Button
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:layout_height="35dp"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginBottom="50dp"
@@ -309,6 +418,7 @@
                     android:elevation="1dp"
                     android:text="Save"
                     android:textAllCaps="false"
+                    android:fontFamily="@font/poppins_medium"
                     android:textColor="@color/white">
 
                 </Button>

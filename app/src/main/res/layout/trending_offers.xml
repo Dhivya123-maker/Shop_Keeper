@@ -8,18 +8,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/deal_bg"
+        android:elevation="3dp"
+        android:padding="5dp"
         android:baselineAligned="false"
-        android:padding="10dp"
-        android:elevation="5dp"
-        android:layout_margin="10dp"
+        android:layout_margin="6dp"
         android:orientation="horizontal">
 
         <ImageView
             android:id="@+id/deal_img"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_gravity="center"
-            android:layout_marginStart="5dp"
             android:src="@drawable/one">
 
         </ImageView>
@@ -28,7 +27,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginStart="10dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginEnd="10dp"
             android:orientation="vertical">
 
             <TextView
@@ -36,18 +36,19 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Men Shirt's"
+                android:fontFamily="@font/poppins_medium"
                 android:textColor="@color/black"
-                android:textSize="14dp"
+                android:textSize="13dp"
                 />
 
                 <TextView
                     android:id="@+id/offer_txt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/poppins_regular"
                     android:text="Min 20% off"
-                    android:textColor="#0099FF"
-                    android:textSize="10dp" />
+                    android:textColor="#1976D2"
+                    android:textSize="11dp" />
 
 
 

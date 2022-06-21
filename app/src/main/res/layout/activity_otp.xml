@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".Login">
+    tools:context=".LoginControl.Login">
 
     <ImageView
         android:id="@+id/logo"
@@ -24,8 +24,9 @@
         android:text="Enter OTP"
         android:textAlignment="center"
         android:textColor="#000000"
-        android:textSize="30dp"
-        android:textStyle="bold" />
+        android:textSize="25dp"
+        android:fontFamily="@font/poppins_bold"
+        />
 
     <LinearLayout
         android:id="@+id/div1"
@@ -34,7 +35,7 @@
         android:orientation="horizontal"
         android:gravity="center"
         android:layout_below="@+id/text1"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:weightSum="2"
         >
         <TextView
@@ -43,8 +44,9 @@
             android:textColor="#666666"
             android:layout_marginStart="40dp"
             android:text="An"
+            android:fontFamily="@font/poppins_regular"
             android:textAlignment="center"
-            android:textSize="15dp"
+            android:textSize="13dp"
             />
         <TextView
             android:layout_width="wrap_content"
@@ -52,7 +54,8 @@
             android:text=" 4 digit code "
             android:textColor="#27AE60"
             android:textAlignment="center"
-            android:textSize="15dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="13dp"
             />
         <TextView
             android:layout_width="wrap_content"
@@ -61,7 +64,8 @@
             android:layout_marginEnd="40dp"
             android:text="has been sent to your "
             android:textAlignment="center"
-            android:textSize="15dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="13dp"
             />
     </LinearLayout>
 
@@ -70,11 +74,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/div1"
-        android:layout_marginTop="5dp"
         android:text="email address"
         android:textAlignment="center"
         android:textColor="#666666"
-        android:textSize="15dp" />
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="13dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -133,6 +137,7 @@
             android:layout_marginBottom="10dp"
             android:elevation="5dp"
             android:text="Submit"
+            android:fontFamily="@font/poppins_medium"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="17dp" />

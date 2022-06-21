@@ -37,4 +37,8 @@
         <item name="android:textColor">@color/white</item>
     </style>
 
+
+    <style name="CustomBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">#BA232725</item>
+    </style>
 </resources>

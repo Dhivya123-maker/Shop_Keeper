@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#BA232725"
+    android:gravity="center"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/bend"
+    >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="Cancel Request"
+            android:textColor="#15974C"
+            android:textSize="14dp"
+            android:fontFamily="@font/poppins_medium"
+            >
+
+        </TextView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Choose a reason for Order Cancellation"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:fontFamily="@font/poppins_medium"
+                >
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="*"
+                android:textColor="#DE0404"
+                android:layout_marginStart="5dp"
+                android:textSize="14dp"
+                android:fontFamily="@font/poppins_medium"
+                >
+
+            </TextView>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:button="@drawable/custom_checkbox">
+
+                        </CheckBox>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="The delivery in delayed"
+                            android:textColor="@color/black"
+                            android:textSize="12dp">
+
+                        </TextView>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:button="@drawable/custom_checkbox">
+
+                        </CheckBox>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:text="Order Placed by mistake"
+                            android:textColor="@color/black"
+                            android:textSize="12dp"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_regular"
+                            >
+
+                        </TextView>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:button="@drawable/custom_checkbox">
+
+                        </CheckBox>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:text="Expected delivery time is too high"
+                            android:textColor="@color/black"
+                            android:textSize="12dp"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_regular"
+                            >
+
+                        </TextView>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:button="@drawable/custom_checkbox">
+
+                        </CheckBox>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:text="Item price / shipping cost is too high"
+                            android:textColor="@color/black"
+                            android:textSize="12dp"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_regular"
+                            >
+
+                        </TextView>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:button="@drawable/custom_checkbox">
+
+                        </CheckBox>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:text="Need to change shipping address"
+                            android:textColor="@color/black"
+                            android:textSize="12dp"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_regular"
+                            >
+
+                        </TextView>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:button="@drawable/custom_checkbox">
+
+                        </CheckBox>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:text="Bought it from somewhere else"
+                            android:textColor="@color/black"
+                            android:textSize="12dp"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_regular"
+                            >
+
+                        </TextView>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/others_lnr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/others_chechbox"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:onClick="onClick"
+                            android:button="@drawable/custom_checkbox">
+
+                        </CheckBox>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:text="Others"
+                            android:textColor="@color/black"
+                            android:textSize="12dp"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_regular"
+                            >
+
+                        </TextView>
+
+
+
+                    </LinearLayout>
+
+
+                    <EditText
+                        android:id="@+id/reason_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:elevation="1dp"
+                        android:paddingStart="10dp"
+                        android:layout_marginTop="20dp"
+                        android:textSize="12dp"
+                        android:hint="Enter a reason..."
+                        android:gravity="top"
+                        android:padding="5dp"
+                        android:visibility="gone"
+                        android:fontFamily="@font/poppins_regular"
+                        android:background="@drawable/edittext_border"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="20dp"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_marginEnd="7dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/deal_bg"
+                            android:backgroundTint="@color/white"
+                            android:elevation="0.5dp"
+                            android:textColor="@color/black">
+
+
+                            <Button
+                                android:id="@+id/cancel"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/border"
+                                android:gravity="center"
+                                android:text="Cancel"
+                                android:textSize="12dp"
+                                android:fontFamily="@font/poppins_medium"
+                                android:textAllCaps="false">
+
+                            </Button>
+
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/submit_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_marginStart="7dp"
+                            android:textSize="12dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/deal_bg"
+                            android:backgroundTint="#1976D2"
+                            android:elevation="1dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Submit"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white">
+
+                        </Button>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </ScrollView>
+
+
+
+    </LinearLayout>
+</LinearLayout>

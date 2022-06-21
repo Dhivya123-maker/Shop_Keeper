@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/drawer_layout"
-    tools:context=".Home">
+    tools:context="com.example.shopkeeper.Home">
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navigation"
@@ -29,26 +29,23 @@
         >
 
 
-
-
         <RelativeLayout
             android:id="@+id/div1"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:orientation="horizontal"
             android:layout_gravity="center"
             android:background="@color/white"
-            >
+            android:orientation="horizontal">
 
-<!--            <com.google.android.material.appbar.MaterialToolbar-->
-<!--                android:id="@+id/topAppBar"-->
-<!--                android:layout_width="25dp"-->
-<!--                android:layout_height="25dp"-->
-<!--                android:layout_centerVertical="true"-->
-<!--                android:layout_marginStart="20dp"-->
-<!--                app:navigationIcon="@drawable/menu">-->
+            <!--            <com.google.android.material.appbar.MaterialToolbar-->
+            <!--                android:id="@+id/topAppBar"-->
+            <!--                android:layout_width="25dp"-->
+            <!--                android:layout_height="25dp"-->
+            <!--                android:layout_centerVertical="true"-->
+            <!--                android:layout_marginStart="20dp"-->
+            <!--                app:navigationIcon="@drawable/menu">-->
 
-<!--            </com.google.android.material.appbar.MaterialToolbar>-->
+            <!--            </com.google.android.material.appbar.MaterialToolbar>-->
 
             <ImageView
                 android:id="@+id/topAppBar"
@@ -89,20 +86,19 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_above="@+id/nav_view"
-            android:layout_below="@+id/div1"
-            app:layout_anchorGravity="center" />
+            android:layout_below="@+id/div1" />
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/nav_view"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_alignParentBottom="true"
-        android:background="@drawable/bottom_background"
-        app:elevation="16dp"
-        app:itemIconTint="@drawable/bottom_navigation_color_selector"
-        app:itemTextAppearanceActive="@style/bottom_menu_text_style"
-        app:itemTextColor="@drawable/bottom_navigation_color_selector"
-        app:menu="@menu/bottom_menu"
-        app:itemIconSize="20dp"/>
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bottom_background"
+            app:elevation="16dp"
+            app:itemIconSize="20dp"
+            app:itemIconTint="@drawable/bottom_navigation_color_selector"
+            app:itemTextAppearanceActive="@style/bottom_menu_text_style"
+            app:itemTextColor="@drawable/bottom_navigation_color_selector"
+            app:menu="@menu/bottom_menu" />
     </RelativeLayout>
 </androidx.drawerlayout.widget.DrawerLayout>

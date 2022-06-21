@@ -17,9 +17,9 @@
         <ImageView
             android:id="@+id/deal_img"
             android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_height="60dp"
             android:layout_gravity="center"
-              android:src="@drawable/one">
+              android:src="@drawable/rec_img">
 
         </ImageView>
         <TextView
@@ -31,6 +31,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="5dp"
             android:textColor="@color/black"
+            android:fontFamily="@font/poppins_regular"
             android:layout_marginBottom="10dp"
             android:textSize="11dp"
             />

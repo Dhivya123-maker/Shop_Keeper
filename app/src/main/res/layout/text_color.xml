@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textColor="@color/black"
+    android:paddingTop="5dp"
+    android:text=""
+    android:textColorHint="@color/black"
+    android:id="@+id/text_color"
+    android:fontFamily="@font/poppins_regular"
+    android:textSize="15dp"
+    >
+
+</TextView>

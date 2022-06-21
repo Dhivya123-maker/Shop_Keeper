@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Category_Control">
+    tools:context=".CategoryControlclass.CategoryClass">
 
 
     <RelativeLayout
@@ -19,10 +19,10 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="45dp"
+            android:layout_height="35dp"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
-            android:layout_toLeftOf="@+id/filter_btn2"
+            android:layout_toLeftOf="@+id/fav_lnr"
             android:background="@drawable/bg1"
             android:backgroundTint="#F5F8FA"
             android:elevation="2dp"
@@ -42,18 +42,36 @@
 
             <ImageView
                 android:id="@+id/sear"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
                 android:layout_marginEnd="10dp"
-                android:src="@drawable/v_14" />
+                android:src="@drawable/v_15" />
         </RelativeLayout>
 
         <RelativeLayout
-            android:id="@+id/filter_btn2"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
+            android:id="@+id/fav_lnr"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="70dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/bg1"
+            android:elevation="2dp">
+
+            <ImageView
+
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/green_heart" />
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:layout_alignParentEnd="true"
             android:layout_marginEnd="20dp"
             android:layout_marginBottom="2dp"
@@ -62,19 +80,32 @@
 
             <ImageView
 
-                android:layout_width="20dp"
-                android:layout_height="20dp"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
                 android:layout_centerInParent="true"
-                android:src="@drawable/v_15" />
+                android:src="@drawable/green_cart" />
         </RelativeLayout>
 
     </RelativeLayout>
 
     <fragment
+        android:id="@+id/fragment_activity_home"
+        android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/linear1">
+        android:layout_above="@+id/nav_view"
+        android:layout_below="@+id/linear1" />
 
-    </fragment>
-
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_background"
+        app:elevation="16dp"
+        app:itemIconSize="20dp"
+        app:itemIconTint="@drawable/bottom_navigation_color_selector"
+        app:itemTextAppearanceActive="@style/bottom_menu_text_style"
+        app:itemTextColor="@drawable/bottom_navigation_color_selector"
+        app:menu="@menu/bottom_menu" />
 </RelativeLayout>
